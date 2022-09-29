@@ -11,20 +11,20 @@ Getting the vertical coordinates of each type, I got this binary code:
 | **E/I** | **N/S** | **F/T** | **J/P** | **MBTI Type**  |
 | :------------: | :------------: | :------------: | :------------: | :------------: |
 | 0 | 0 | 0 | 0 | ENFJ  |
-| 1 | 0 | 0 | 0 | INFJ  |
-| 0 | 1 | 0 | 0 | ESFJ  |
-| 1 | 1 | 0 | 0 | ISFJ  |
-| 0 | 0 | 1 | 0 | ENTJ  |
-| 1 | 0 | 1 | 0 | INTJ  |
-| 0 | 1 | 1 | 0 | ESTJ  |
-| 1 | 1 | 1 | 0 | ISTJ  |
 | 0 | 0 | 0 | 1 | ENFP  |
-| 1 | 0 | 0 | 1 | INFP  |
-| 0 | 1 | 0 | 1 | ESFP  |
-| 1 | 1 | 0 | 1 | ISFP  |
+| 0 | 0 | 1 | 0 | ENTJ  |
 | 0 | 0 | 1 | 1 | ENTP  |
-| 1 | 0 | 1 | 1 | INTP  |
+| 0 | 1 | 0 | 0 | ESFJ  |
+| 0 | 1 | 0 | 1 | ESFP  |
+| 0 | 1 | 1 | 0 | ESTJ  |
 | 0 | 1 | 1 | 1 | ESTP  |
+| 1 | 0 | 0 | 0 | INFJ |
+| 1 | 0 | 0 | 1 | INFP  |
+| 1 | 0 | 1 | 0 | INTJ  |
+| 1 | 0 | 1 | 1 | INTP  |
+| 1 | 1 | 0 | 0 | ISFJ  |
+| 1 | 1 | 0 | 1 | ISFP  |
+| 1 | 1 | 1 | 0 | ISTJ  |
 | 1 | 1 | 1 | 1 | ISTP  |
 
 In each column, 0 means the first letter and 1 the second one.
