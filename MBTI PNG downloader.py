@@ -23,14 +23,14 @@ while(persType < 16):
 
     # Getting the four letters from the binary number
     while(i < 4):
-        j = int(b[(le-1) - i]) # We get the correspondent letter from the current digit binary number
-        fourLetters = fourLetters[:i] + letters[i][j] + fourLetters[i+1:]
+        # We get the correspondent letter from the cu  rrent digit binary number
+        fourLetters = fourLetters[:i] + letters[i][int(b[i])] + fourLetters[i+1:]
         i += 1
-        
-    # Getting PNGs yay
-    url = "https://www.16personalities.com/images/types/" + fourLetters + ".png"
-    r = requests.get(url, allow_redirects = True)
-    open(fourLetters.upper() + ".png", 'wb').write(r.content)
 
-    # You lost the game >:) (if u don't get it, search "The Game")
+    print(fourLetters)    
+    # Getting PNGs yay
+    # url = "https://www.16personalities.com/images/types/" + fourLetters + ".png"
+    # r = requests.get(url, allow_redirects = True)
+    # open(fourLetters.upper() + ".png", 'wb').write(r.content)
+
     persType += 1
