@@ -26,11 +26,10 @@ while(persType < 16):
         # We get the correspondent letter from the cu  rrent digit binary number
         fourLetters = fourLetters[:i] + letters[i][int(b[i])] + fourLetters[i+1:]
         i += 1
-
-    print(fourLetters)    
+  
     # Getting PNGs yay
-    # url = "https://www.16personalities.com/images/types/" + fourLetters + ".png"
-    # r = requests.get(url, allow_redirects = True)
-    # open(fourLetters.upper() + ".png", 'wb').write(r.content)
+    url = "https://www.16personalities.com/images/types/" + fourLetters + ".png"
+    r = requests.get(url, allow_redirects = True)
+    open(fourLetters.upper() + ".png", 'wb').write(r.content)
 
     persType += 1
