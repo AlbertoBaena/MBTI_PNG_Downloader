@@ -23,7 +23,7 @@ while(persType < 16):
 
     # Getting the four letters from the binary number
     while(i < 4):
-        # We get the correspondent letter from the cu  rrent digit binary number
+        # We get the correspondent letter from the current digit binary number
         fourLetters = fourLetters[:i] + letters[i][int(b[i])] + fourLetters[i+1:]
         i += 1
   
